@@ -12,7 +12,8 @@ This is my personal portfolio website, built using **HTML**, **CSS**. It showcas
 
 ## 🖼️ Screenshot
 
-![Portfolio Screenshot](./Assets/screenshot.png)
+![Portfolio Screenshot](https://raw.githubusercontent.com/mdasifmahmuddev/MyPortfolio/8ed8de521a36259697549c8fc9c81a604a033f2d/screenshot.PNG)
+
 
 ---
 
