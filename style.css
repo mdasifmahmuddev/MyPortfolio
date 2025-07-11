@@ -38,21 +38,7 @@ body {
 }
 
 
-
-/* experiment */
  
- 
-
-/* experiment */
-
-
-
-
-
-
-
-
-
 
 
 
@@ -179,21 +165,21 @@ body {
 
  
 .stats-section {
-  background-color: #f5f3ff; /* softer than #eaeaff for less eye strain */
+  background-color: #f5f3ff;  
   background-image: url("./Assets/img_flwr.gif");
   background-repeat: repeat-x;
   background-size: 80px auto;
   background-position: bottom left;
 
-  padding: 60px 50px;
+  padding: 100px 100px;
   border-radius: 20px;
   text-align: center;
   width: 1000px;
   margin: 40px auto;
-  box-shadow: 0 10px 30px rgba(92, 78, 252, 0.1); /* subtle shadow */
+  box-shadow: 0 10px 30px rgba(92, 78, 252, 0.1);  
 }
 
-/* Section Title */
+ 
 .stats-section h3 {
   font-size: 28px;
   font-weight: 700;
@@ -202,7 +188,7 @@ body {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
-/* Subtitle or Description */
+ 
 .state-text { 
   color: #44445a;
   margin-bottom: 30px;
@@ -210,7 +196,7 @@ body {
   line-height: 1.6;
 }
 
-/* Grid Layout */
+ 
 .stats-grid {
   display: flex;
   justify-content: space-around;
@@ -218,13 +204,13 @@ body {
   gap: 30px;
 }
 
-/* Each Stat Box */
+ 
 .stat-box {
   flex: 1 1 30%;
   min-width: 200px;
 }
 
-/* Stat Label (optional) */
+ 
 .stat-box h2 {
   font-size: 24px;
   color: #5c4efc;
@@ -232,7 +218,7 @@ body {
   margin-bottom: 10px;
 }
 
-/* Stat Number */
+ 
 .stat-box h3 {
   font-size: 48px;
   color: #5c4efc;
@@ -276,61 +262,83 @@ body {
 }
 
 .testimonial-card {
-  background: white;
-  border-radius: 12px;
-  padding: 20px;
+  --grad: #4facfe, #00f2fe; 
+  padding: 2.5rem;
+  background-image: linear-gradient(to bottom left, #e0e4e5, #f2f6f9);
+  border-radius: 2rem;
+  display: grid;
+  grid-template-areas:
+    "stars"
+    "title"
+    "content"
+    "reviewer"
+    "bar";
+  gap: 1.5rem;
+  font-family: system-ui, sans-serif;
+  color: #444447;
+  box-shadow:
+    inset -2px 2px hsl(0 0% 100% / 1),
+    -20px 20px 40px hsl(0 0% 0% / 0.25);
   max-width: 300px;
-  text-align: left;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
+ 
 .testimonial-card .stars {
-  color: #ffb400;
-  font-size: 18px;
-  margin-bottom: 10px;
+  grid-area: stars;
+  display: flex;
+  gap: 0.3rem;
 }
 
+ 
 .testimonial-card h4 {
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 10px;
-  color: #1d1d1f;
+  grid-area: title;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0;
 }
 
+ 
 .testimonial-card p {
-  font-size: 14px;
-  color: #6e6e73;
-  margin-bottom: 20px;
+  grid-area: content;
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
-.reviewer {
+ 
+.testimonial-card .reviewer {
+  grid-area: reviewer;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 1rem;
 }
 
-.reviewer img {
+.testimonial-card .reviewer img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   object-fit: cover;
 }
 
-.reviewer-name {
-  font-size: 14px;
-  font-weight: 600;
-  color: #1f1f1f;
+.testimonial-card .reviewer-name {
+  font-weight: bold;
+  margin: 0;
 }
 
-.review-date {
-  font-size: 12px;
-  color: #a0a0a0;
+.testimonial-card .review-date {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0;
 }
 
-.stars img {
-  width: 20px;
-  height: 20px;
-  margin-right: 2px;
+ 
+.testimonial-card::after {
+  content: "";
+  grid-area: bar;
+  height: 2px;
+   background-image: linear-gradient(90deg, #1E3266, #1E3266);
+  width: 100%;
 }
 
  
@@ -472,8 +480,7 @@ body {
   background-color: #453ad3;
 }
 
-
-/*  Text Bold Form */
+ 
 
 .bold-label {
   font-weight: bold;
@@ -494,7 +501,7 @@ body {
   background-size: cover;
   background-position: center;
   padding: 40px 20px;
-  color: #ffffff; /* This sets white for all text */
+  color: #ffffff;  
 }
 
 .footer a,
