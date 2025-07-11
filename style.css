@@ -179,43 +179,73 @@ body {
 
  
 .stats-section {
-  background-color: #eaeaff;
-  padding: 50px 50px;
+  background-color: #f5f3ff; /* softer than #eaeaff for less eye strain */
+  background-image: url("./Assets/img_flwr.gif");
+  background-repeat: repeat-x;
+  background-size: 80px auto;
+  background-position: bottom left;
+
+  padding: 60px 50px;
   border-radius: 20px;
   text-align: center;
   width: 1000px;
   margin: 40px auto;
+  box-shadow: 0 10px 30px rgba(92, 78, 252, 0.1); /* subtle shadow */
 }
 
+/* Section Title */
 .stats-section h3 {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 700;
-  color: #1c1c1e;
+  color: #2d2d3a;
   margin-bottom: 40px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
-.state-text{ 
-  color: #252432;
+/* Subtitle or Description */
+.state-text { 
+  color: #44445a;
   margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
+/* Grid Layout */
 .stats-grid {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-.stat-box h2 {
-  font-size: 36px;
-  color: #5c4efc;
-  font-weight: 800;
-  font-style: bold;
-  margin-bottom: 10px;
- }
+/* Each Stat Box */
+.stat-box {
+  flex: 1 1 30%;
+  min-width: 200px;
+}
 
+/* Stat Label (optional) */
+.stat-box h2 {
+  font-size: 24px;
+  color: #5c4efc;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* Stat Number */
+.stat-box h3 {
+  font-size: 48px;
+  color: #5c4efc;
+   margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  font-weight: bolder;
+}
+
+/* Description */
 .stat-box p {
-  font-size: 20px;
-  color: #6e6e73;
-   
+  font-size: 18px;
+  color: #D646A1;
+  line-height: 1.5;
 }
 
  
@@ -309,6 +339,13 @@ body {
   padding: 80px 20px;
   text-align: center;
 }
+
+
+
+
+
+
+
 
 .focus-text h2 {
   font-size: 36px;
