@@ -1,0 +1,89 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f8fc;
+  color: #1f1f1f;
+  min-height: 100vh;
+}
+
+/* Hero Section with Background */
+.hero {
+  background-image: url('./Assets/Hero-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 60px;
+  color: white;
+  text-align: center;
+}
+
+/* Header/Navbar */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+}
+
+/* Logo */
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+/* Buttons */
+.btn {
+  background-color: #5f5dff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #4946e4;
+}
+
+.sign-up {
+  font-size: 14px;
+}
+
+/* Hero Text Area */
+.main-content {
+  margin-top: 80px;
+  padding: 0 20px;
+}
+
+.main-content h1 {
+  font-size: 38px;
+  line-height: 1.4;
+  font-weight: 700;
+  color: #252432;
+}
+
+.main-content h1 span {
+  color: #4946e4;
+}
+
+.main-btn {
+  margin-top: 30px;
+  display: inline-block;
+  font-size: 14px;
+}
+
+/* Main Content Section (below hero) */
+.content {
+  padding: 60px 20px;
+  text-align: center;
+  color: #1f1f1f;
+}
+ 
+ 
